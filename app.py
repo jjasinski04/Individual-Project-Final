@@ -15,7 +15,7 @@ warnings.filterwarnings("ignore")
 # ─────────────────────────────────────────────
 
 def load_and_prepare():
-    df = pd.read_excel("listings.xlsx", sheet_name="listings")
+    df = pd.read_excel("airbnb_raw.xlsx", sheet_name="listings")
 
     # Clean price
     if df["price"].dtype == object:
